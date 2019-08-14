@@ -1,7 +1,7 @@
 {
     "name": "OpenMageModuleFostering/Raveinfosys_sitemap",
     "type": "magento-module",
-    "license": "OSL-3.0",
+    "license": "OSL-v3.0",
     "homepage": "",
     "description": "The Raveinfosys Sitemap Extension generate the sitemap xml file and submit the created xml file on different channel.",
     "authors": [
