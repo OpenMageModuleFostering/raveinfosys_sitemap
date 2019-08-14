@@ -6,10 +6,10 @@ $installer->startSetup();
 $setup = new Mage_Eav_Model_Entity_Setup('core_setup');
 
 $installer->run("
-
--- DROP TABLE IF EXISTS {$this->getTable('showmap')};    
+ 
+-- DROP TABLE IF EXISTS {$this->getTable('showmap')};
 	CREATE TABLE {$this->getTable('showmap')} (
-  `showmap_id` int(11) NOT NULL auto_increment,  
+  `showmap_id` int(11) NOT NULL auto_increment,
    `ping_interval` int(12),
    `format` varchar(20),
    `google` varchar(20) NOT NULL default 'no',
@@ -21,10 +21,10 @@ $installer->run("
 
 
 
--- DROP TABLE IF EXISTS {$this->getTable('showmap_config')};    
+-- DROP TABLE IF EXISTS {$this->getTable('showmap_config')};
 	CREATE TABLE {$this->getTable('showmap_config')} (
   `id` int(11) NOT NULL auto_increment,
-  `product` varchar(20), 
+  `product` varchar(20),
   `category` varchar(20),
   `cms` varchar(20),
   `other` varchar(20),
@@ -33,4 +33,4 @@ $installer->run("
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ");
 
-$installer->endSetup(); 
+$installer->endSetup();
