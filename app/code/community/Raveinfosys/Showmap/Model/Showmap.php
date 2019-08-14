@@ -30,6 +30,8 @@ class Raveinfosys_Showmap_Model_Showmap extends Mage_Core_Model_Abstract
 
     public function submitSitemap($data)
     {
+		$data_dec = array("google"=>"", "yahoo"=>"", "bing"=>"","window"=>"");
+		$data=(array_merge($data_dec,$data));
         $responses = array();
         $responses['google_response'] = 'Not Configured';
         $responses['yahoo_response'] = 'Not Configured';

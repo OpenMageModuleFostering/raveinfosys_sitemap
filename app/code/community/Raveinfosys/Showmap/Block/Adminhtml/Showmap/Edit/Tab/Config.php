@@ -8,7 +8,11 @@ class Raveinfosys_Showmap_Block_Adminhtml_Showmap_Edit_Tab_Config extends Mage_A
 
         $config = Mage::getModel('showmap/config');
         $row = $config->getRow();
-        $category = $row['category'];
+		if($row==null){
+		$row=array("category"=>"","product"=>"","cms"=>"","other"=>"");
+		}
+		$category = $row['category'];
+	 
         $form = new Varien_Data_Form(array(
             'id' => 'config_form',
             'action' => $this->getUrl('*/*/config', array('id' => $this->getRequest()->getParam('id'))),

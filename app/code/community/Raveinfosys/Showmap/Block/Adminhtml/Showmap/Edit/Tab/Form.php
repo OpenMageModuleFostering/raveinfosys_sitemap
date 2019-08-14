@@ -7,6 +7,9 @@ class Raveinfosys_Showmap_Block_Adminhtml_Showmap_Edit_Tab_Form extends Mage_Adm
     {
         $showmap = Mage::getModel('showmap/showmap');
         $row = $showmap->getRow();
+		if($row==null){
+		$row=array("google"=>"","bing"=>"","window"=>"","yahoo"=>"","ping_interval"=>"","format"=>"");
+		}
 
         $google = false;
         $bing = false;
