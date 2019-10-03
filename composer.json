@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Raveinfosys_sitemap",
+    "name": "OpenMageModuleFostering\/Raveinfosys_sitemap",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "The Raveinfosys Sitemap Extension generate the sitemap xml file and submit the created xml file on different channel.",
     "authors": [
-    {
-        "name": "Rave Infosys",
-        "email": "magento@raveinfosys.com"
-    }
-],
+        {
+            "name": "Rave Infosys",
+            "email": "magento@raveinfosys.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
